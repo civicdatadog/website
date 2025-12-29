@@ -1,0 +1,11 @@
+*.pyc
+__pycache__/
+.venv/
+venv/
+env/
+.env/
+.env
+ENV/
+VENV/
+pip-wheel-metadata/
+*.har
