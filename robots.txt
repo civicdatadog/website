@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Ask search engines to check for updates frequently
+Sitemap: https://civicdatadog.com/sitemap.xml
+
+
