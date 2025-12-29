@@ -1,0 +1,156 @@
+:root {
+  --bg: #f7f7f5;
+  --ink: #111111;
+  --muted: #4a4a4a;
+  --border: #c9c9c9;
+  --panel: #ffffff;
+  --accent: #1f4f6d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:focus,
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+header {
+  background: var(--panel);
+  border-bottom: 2px solid var(--border);
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+}
+
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand h1 {
+  font-size: 1.65rem;
+  margin: 0;
+}
+
+.brand p {
+  margin: 0;
+  color: var(--muted);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  padding: 2rem 0 3rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  margin-top: 0;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  background: var(--panel);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+thead th {
+  background: #e6e6e3;
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid var(--border);
+}
+
+tbody td {
+  padding: 0.7rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.small {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+footer {
+  border-top: 2px solid var(--border);
+  background: var(--panel);
+  padding: 1.5rem 0;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+.list-columns {
+  columns: 2 240px;
+  column-gap: 2rem;
+}
+
+@media (max-width: 720px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .brand {
+    align-items: flex-start;
+  }
+
+  .list-columns {
+    columns: 1;
+  }
+
+  table {
+    min-width: 520px;
+  }
+}
