@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minnesota State Spending Overview | Civic DataDog</title>
+    <meta name="description" content="Static overview of Minnesota state government spending using official public data from TransparencyMN, Minnesota Management & Budget, the Office of the State Auditor, and USAspending.gov.">
+    <meta name="keywords" content="Minnesota spending, Minnesota state budget, Minnesota government spending, TransparencyMN, MMB budget, state auditor Minnesota, USAspending Minnesota, MN state expenditures, MN SWIFT payments, MN contracts, MN grants, MN payroll">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://civicdatadog.com/state-spending/overview.htm">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="brand">
+          <div class="brand-block">
+            <div class="logo" aria-hidden="true">CD</div>
+            <div>
+              <h1>Minnesota State Spending</h1>
+              <p>Following the money across Minnesota state government.</p>
+            </div>
+          </div>
+          <p class="small"><a href="https://civicdatadog.com">civicdatadog.com</a> | X: <a href="https://x.com/civicdatadog">https://x.com/civicdatadog</a></p>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="overview.htm">Minnesota State Spending</a></li>
+            <li><a href="../sources.html">Sources</a></li>
+            <li><a href="../methodology.html">Methodology</a></li>
+            <li><a href="../updates.html">Updates</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <section class="card">
+        <h2>Overview</h2>
+        <p><strong>Civic DataDog is a static public transparency portal for Minnesota state government spending.</strong> This page provides a readable, link-rich overview of Minnesota state expenditures using official public data from the State of Minnesota and the federal government.</p>
+        <p class="small">All numbers on this site should be treated as summaries of official records. For legal, audited, or most up-to-date figures, always refer to the primary sources listed on the <a href="../sources.html">Sources</a> page.</p>
+      </section>
+
+      <section>
+        <h2>High-Level Minnesota State Spending (Structure Only)</h2>
+        <div class="card">
+          <p>This table is designed to be generated from CSV exports (for example from TransparencyMN SWIFT reports or MMB expenditure tables) and then published as static HTML. Replace the example values below with real figures from the official datasets when you prepare a production export.</p>
+          <div class="table-wrap" role="region" aria-label="Minnesota state spending overview table">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Category</th>
+                  <th scope="col">Example Amount (USD)</th>
+                  <th scope="col">Fiscal Year</th>
+                  <th scope="col">Primary Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Total State Government Expenditures</td>
+                  <td>Example: $XX.XB</td>
+                  <td>FY 2023</td>
+                  <td><a href="https://mn.gov/mmb/budget/">Minnesota Management &amp; Budget (MMB) - State Budget</a></td>
+                </tr>
+                <tr>
+                  <td>General Fund Spending</td>
+                  <td>Example: $XX.XB</td>
+                  <td>FY 2023</td>
+                  <td><a href="https://mn.gov/mmb/budget/">MMB Biennial Budget Documents</a></td>
+                </tr>
+                <tr>
+                  <td>Federal Funds to Minnesota State Government</td>
+                  <td>Example: $XX.XB</td>
+                  <td>FY 2023</td>
+                  <td><a href="https://www.usaspending.gov/">USAspending.gov (filtered for Minnesota)</a></td>
+                </tr>
+                <tr>
+                  <td>Local Government Spending (Audited)</td>
+                  <td>Example: $XX.XB</td>
+                  <td>Most recent year available</td>
+                  <td><a href="https://www.osa.state.mn.us/">Office of the State Auditor (OSA)</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small">Replace the example amounts (e.g., <em>$XX.XB</em>) with pre-calculated totals from downloaded CSV files before publishing.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Planned Static Tables</h2>
+        <div class="card">
+          <p>The following sections describe static tables that should be generated offline from CSV exports and then embedded here as pure HTML. Each table should point back to the exact CSV or report it was derived from.</p>
+          <ul>
+            <li><strong>State Payments (SWIFT)</strong> – Top vendors, payments by category, payments by agency.</li>
+            <li><strong>State Contracts &amp; Grants</strong> – Contract totals by vendor, open vs. closed contracts, grant distributions.</li>
+            <li><strong>State Payroll</strong> – Aggregated totals by agency and job classification (no individual names unless already public in source data).</li>
+            <li><strong>Local Government Spending</strong> – County, city, and special district totals from State Auditor reports.</li>
+          </ul>
+          <p class="small">All tables should be generated from official CSVs or PDF-to-CSV conversions, then reviewed before publication.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Key Minnesota Data Links</h2>
+        <div class="card">
+          <ul>
+            <li><a href="https://mn.gov/mmb/transparency-mn/">TransparencyMN (SWIFT)</a> – State payments, contracts, grants, and payroll.</li>
+            <li><a href="https://mn.gov/mmb/budget/">Minnesota Management &amp; Budget (MMB)</a> – Biennial budgets and historical expenditure tables.</li>
+            <li><a href="https://www.osa.state.mn.us/">Office of the State Auditor (OSA)</a> – County and local government audited spending.</li>
+            <li><a href="https://www.usaspending.gov/">USAspending.gov</a> – Federal funds flowing into Minnesota (filter by state = MN).</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <p>Following the money in Minnesota state government.</p>
+        <p>Powered by <a href="https://athena.live">Athena.live</a> — public data aggregation &amp; AI analysis</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
